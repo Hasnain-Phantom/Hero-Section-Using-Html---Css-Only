@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+#nav-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: white;
+}
+
+#nav h3 {
+  font-size: 17px;
+  border: 1.5px solid black;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-weight: 500;
+  background-color: white;
+  color: black; /* Set default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#nav h3:hover {
+  background-color: orangered; /* Change background to black on hover */
+  color: white; /* Change text color to white on hover */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+#nav i {
+  border: 1.5px solid black;
+  padding: 5px 8px;
+  border-radius: 50px;
+  background-color: white;
+  color: black; /* Set default icon color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#nav i:hover {
+  background-color: orangered; /* Change background to black on hover */
+  color: white; /* Change icon color to white on hover */
+  cursor: pointer; /* Pointer to indicate it's clickable */
+}
+
+#nav h1 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav button {
+  padding: 7px 12px;
+  border-radius: 50px;
+  border: 1.5px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav button:hover {
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+
+#btn2 {
+  background-color: orangered;
+  color: i;
+  border: none;
+}
+
+#heading {
+  font-size: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-weight: 20;
+}
+
+img {
+  height: 400px;
+  width: 280px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+
+#img2 {
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#img3 {
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+#img4 {
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+#btm-left {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  font-size: 17px;
+  font-weight: 20;
+}
+
+#icons {
+    position: absolute;
+    bottom: 8%;
+    right: 3%;
+    display: flex;
+    gap: 0px;
+    font-size: 23px;
+  }
+  
+  #icons i {
+    transition: color 0.3s ease, transform 0.3s ease; 
+    color: black; 
+  }
+  
+  #icons i:hover {
+    color: orangered; 
+    transform: scale(1.2); 
+  }
+  
+
+
+
+#btm-Right {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  display: flex;
+  font-size: 17px;
+  font-weight: 20;
+}
+
+#nav-part2 {
+  position: absolute;
+  top: 6.9%;
+  left: 51.3%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  position: absolute;
+  top: 6.9%;
+  left: 43.8%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+}
+#down {
+  position: absolute;
+  top: 93%;
+  left: 47.7%;
+  font-size: 40px;
+  color: rgb(100, 98, 98);
+  border: solid rgb(100, 98, 98);
+  border-radius: 200px;
+  padding: 20px;
+  padding-top: 10px;
+  overflow: hidden; /* Ensures anything outside the container is cropped */
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%); /* Crops the circle in half */
+}
+
+#down{
+  transition: color 0.3s ease, transform 0.3s ease; 
+  color: black; 
+}
+
+#down:hover {
+  color: orangered; 
+  transform: scale(1.1); 
+}
+
+
+#text{
+  position: absolute;
+  top: 68%;
+  left: 46%;
+  z-index: 1;
+  background-color: white;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 20;
+  border-radius: 20px;
+  
+}
+
+#user-icon{
+  position: absolute;
+  top: 67.6%;
+  left: 43.4%;
+  z-index: 1;
+  font-size: 18px;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 20px;
+}
+
+#user-icon{
+  transition: color 0.3s ease, transform 0.3s ease; 
+  color: black; 
+}
+
+#user-icon:hover {
+  color: orangered;
+
+  
+  
+}
+
+
+
